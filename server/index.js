@@ -18,8 +18,9 @@ app.use(helmet({
 app.use(cors({
   origin: [
     'http://localhost:3000',
-    'https://udis-ai-1.onrender.com',
-    'https://udis-ai.vercel.app'
+    'https://udis-ai-1.vercel.app',
+    'https://udis-ai-1-git-main-jane-udai.vercel.app',
+    'https://udis-ai-1-5e4d0cgt4-jane-udai.vercel.app'
   ],
   credentials: false
 }));
