@@ -14,7 +14,16 @@ app.use(helmet({
   contentSecurityPolicy: false,
   crossOriginResourcePolicy: false
 }));
-app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
+
+app.use(cors({
+  origin: [
+    'http://localhost:3000',
+    'https://udis-ai-1.onrender.com',
+    'https://udis-ai.vercel.app'
+  ],
+  credentials: false
+}));
+
 app.use(express.json());
 
 // Rate limiting
